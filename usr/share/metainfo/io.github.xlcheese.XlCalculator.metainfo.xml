@@ -69,6 +69,11 @@
   </provides>
   <content_rating type="oars-1.1"/>
   <releases>
+    <release version="0.12" date="2026-11-23">
+      <description>
+        <p>Ready for Flathub. On a Wayland desktop, xl-Calculator runs through XWayland so the Buffet menu opens in the right place. The icon has hand-drawn small sizes as PNG, and searching Add or Remove Currencies also finds a currency by its English name in any language.</p>
+      </description>
+    </release>
     <release version="0.11" date="2026-11-18">
       <description>
         <p>The Buffet menu: every menu at once, from a button in the title bar, with a choice of layouts in Preferences, or a classic menu bar. The Currency Converter has about 150 currencies, with rates from the European Central Bank, the United Nations Treasury and the Bank of Canada, and a list to choose the ones in its menus. The shaded keys keep the theme's highlights and shadows, and there is a draft Russian translation.</p>

@@ -50,7 +50,7 @@ Download the `.deb` from the [latest release](https://github.com/xlcheese/xlcalc
 and open it, or install it from a terminal:
 
 ```
-sudo apt install ./xl-calculator_0.11_all.deb
+sudo apt install ./xl-calculator_0.12_all.deb
 ```
 
 xl-Calculator then appears in the menu under **Accessories**.

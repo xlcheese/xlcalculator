@@ -1,3 +1,18 @@
+xl-calculator (0.12) unstable; urgency=medium
+
+  * On a Wayland desktop, xl-Calculator runs through XWayland (X11), so the
+    Buffet menu opens just under its button and stays on screen. Setting
+    GDK_BACKEND still chooses the backend.
+  * The small icons (16, 24, and 32 pixels) are installed as PNG, with
+    their drawings kept in data/icons.
+  * Searching Add or Remove Currencies also matches each currency's
+    English name, so "peso" finds the pesos in every language.
+  * A Flatpak manifest, for Flathub, and a checklist for trying it on other
+    desktops. Every link points at the repository's new address,
+    github.com/xlcheese/xlcalculator.
+
+ -- Wesley Hayslip <xl_cheese@hotmail.com>  Mon, 23 Nov 2026 12:00:00 +0000
+
 xl-calculator (0.11) unstable; urgency=medium
 
   * The Buffet menu: every menu at once, from a button in the title bar
