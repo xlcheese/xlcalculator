@@ -11,7 +11,7 @@ Converter's menus offer. Changes take effect at once, in every window."""
 
 from gi.repository import Gdk, Gtk
 from i18n import _, ngettext
-from currency import BOC, ECB, UN, Rates, currency_name, offered_currencies
+from currency import BOC, ECB, UN, Rates, currency_name, english_currency_name, offered_currencies
 
 def source_note(source):
     """Where a currency's rate comes from, and how often it changes, beside it in the list."""
@@ -59,7 +59,7 @@ class CurrencyChooser(Gtk.Window):
             line.pack_end(note, False, False, 0)
             row = Gtk.ListBoxRow()
             row.add(line)
-            row.search_text = f"{name} {code}".casefold()
+            row.search_text = f"{name} {code} {english_currency_name(code)}".casefold()   # "peso" in any language
             self.list.add(row)
             self.ticks[code] = tick
         scroller = Gtk.ScrolledWindow()

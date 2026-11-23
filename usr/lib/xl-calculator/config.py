@@ -64,7 +64,7 @@ APP_ID = "io.github.xlcheese.XlCalculator"     # also the name of the .desktop a
 APP_VERSION = "0.11"
 
 
-APP_WEBSITE = "https://github.com/xlcheese/xl-calculator"
+APP_WEBSITE = "https://github.com/xlcheese/xlcalculator"
 
 
 APP_AUTHORS = ["Wesley Hayslip"]

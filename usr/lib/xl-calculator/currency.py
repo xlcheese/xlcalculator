@@ -44,7 +44,7 @@ UN_URL = os.environ.get("XL_CALCULATOR_UN_URL",
 BOC_URL = os.environ.get("XL_CALCULATOR_BOC_URL",
                          None if TESTING else "https://www.bankofcanada.ca/valet/observations/FXTWDCAD/json?recent=1")
 UN_DAYS = 14                                # the UN sets its rates once or twice a month: fetched at most this often
-USER_AGENT = f"xl-Calculator/{APP_VERSION} (+https://github.com/xlcheese/xl-calculator)"
+USER_AGENT = f"xl-Calculator/{APP_VERSION} (+https://github.com/xlcheese/xlcalculator)"
 RATES_DIR = os.path.join(GLib.get_user_cache_dir(), "xl-calculator")      # ~/.cache/xl-calculator
 RATES_FILE = os.path.join(RATES_DIR, "rates.json")
 MAX_RATES_SIZE = 500000                     # bytes; the bank's file is about 2 kB, the UN's about 50 kB
@@ -254,6 +254,13 @@ def currency_name(code):
         CurrencyNames.load()
     name = CurrencyNames.names.get(code)
     return CurrencyNames.translation.gettext(name) if name else NEW_CURRENCY_NAMES.get(code, code)
+
+
+def english_currency_name(code):
+    """The currency's ISO 4217 name in English, for searching by it in any language."""
+    if CurrencyNames.names is None:
+        CurrencyNames.load()
+    return CurrencyNames.names.get(code) or NEW_CURRENCY_NAMES.get(code, code)
 
 
 class CurrencyNames:

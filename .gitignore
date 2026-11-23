@@ -9,3 +9,6 @@ debian/debhelper-build-stamp
 # built by make
 usr/share/locale/
 usr/share/applications/
+# flatpak-builder
+build-dir/
+.flatpak-builder/

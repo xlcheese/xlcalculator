@@ -46,7 +46,7 @@ Menu** sets how it lays out its menus, or switches back to a classic menu bar.
 
 ## Install
 
-Download the `.deb` from the [latest release](https://github.com/xlcheese/xl-calculator/releases/latest)
+Download the `.deb` from the [latest release](https://github.com/xlcheese/xlcalculator/releases/latest)
 and open it, or install it from a terminal:
 
 ```
@@ -111,6 +111,13 @@ Makefile, which can also be used on its own:
 - `make` compiles the translations and writes the menu entry
 - `make install` installs everything under `/usr` (or `PREFIX`, into `DESTDIR`)
 - `make pot` updates `po/xl-calculator.pot` after any text in the program changes
+
+The Flatpak is built from `flatpak/io.github.xlcheese.XlCalculator.yml` (`flatpak/TESTING.md` has
+the checklist for trying it on other desktops):
+
+```
+flatpak-builder --user --install --force-clean build-dir flatpak/io.github.xlcheese.XlCalculator.yml
+```
 
 ## Translate
 

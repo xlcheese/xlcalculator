@@ -7,8 +7,9 @@
   <summary>A calculator for Linux Mint and the Cinnamon desktop</summary>
   <description>
     <p>
-      xl-Calculator is a calculator in the style of the Linux Mint X-Apps, with a classic menubar,
-      the system theme and a history you can click to reuse earlier answers.
+      xl-Calculator is a calculator in the style of the Linux Mint X-Apps: it follows the system theme,
+      keeps a history you can click to reuse earlier answers, and shows every menu at once from one
+      button in the title bar (or a classic menu bar, if you prefer).
     </p>
     <ul>
       <li>Basic: everyday sums</li>
@@ -26,8 +27,40 @@
   <developer id="io.github.xlcheese">
     <name>Wesley Hayslip</name>
   </developer>
-  <url type="homepage">https://github.com/xlcheese/xl-calculator</url>
-  <url type="bugtracker">https://github.com/xlcheese/xl-calculator/issues</url>
+  <url type="homepage">https://github.com/xlcheese/xlcalculator</url>
+  <url type="bugtracker">https://github.com/xlcheese/xlcalculator/issues</url>
+  <url type="vcs-browser">https://github.com/xlcheese/xlcalculator</url>
+  <url type="translate">https://github.com/xlcheese/xlcalculator#translate</url>
+  <screenshots>
+    <screenshot type="default">
+      <caption>Scientific mode</caption>
+      <image>https://raw.githubusercontent.com/xlcheese/xlcalculator/v0.12/screenshots/scientific.png</image>
+    </screenshot>
+    <screenshot>
+      <caption>Every menu at once, from one button</caption>
+      <image>https://raw.githubusercontent.com/xlcheese/xlcalculator/v0.12/screenshots/buffet-menu.png</image>
+    </screenshot>
+    <screenshot>
+      <caption>About 150 currencies, with official rates</caption>
+      <image>https://raw.githubusercontent.com/xlcheese/xlcalculator/v0.12/screenshots/currency-converter.png</image>
+    </screenshot>
+    <screenshot>
+      <caption>Loans, savings, cash flows, and depreciation</caption>
+      <image>https://raw.githubusercontent.com/xlcheese/xlcalculator/v0.12/screenshots/financial.png</image>
+    </screenshot>
+    <screenshot>
+      <caption>Hexadecimal, binary, and bitwise operators</caption>
+      <image>https://raw.githubusercontent.com/xlcheese/xlcalculator/v0.12/screenshots/programmer.png</image>
+    </screenshot>
+    <screenshot>
+      <caption>Twelve kinds of units, converted as you type</caption>
+      <image>https://raw.githubusercontent.com/xlcheese/xlcalculator/v0.12/screenshots/unit-converter.png</image>
+    </screenshot>
+  </screenshots>
+  <branding>
+    <color type="primary" scheme_preference="light">#d9d9d9</color>
+    <color type="primary" scheme_preference="dark">#4a4a4a</color>
+  </branding>
   <replaces>
     <id>io.github.xlcheese.Xcalculator</id>
   </replaces>

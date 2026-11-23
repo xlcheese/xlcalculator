@@ -3,7 +3,7 @@
 # both "Refresh rates automatically" and "Also when xl-Calculator is closed" are on.
 [Unit]
 Description=Refresh xl-Calculator's exchange rates
-Documentation=https://github.com/xlcheese/xl-calculator
+Documentation=https://github.com/xlcheese/xlcalculator
 
 [Service]
 Type=oneshot

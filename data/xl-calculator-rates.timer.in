@@ -2,7 +2,7 @@
 # rates are older than the number of days chosen in Preferences, and refresh them if so.
 [Unit]
 Description=Check xl-Calculator's exchange rates once a day
-Documentation=https://github.com/xlcheese/xl-calculator
+Documentation=https://github.com/xlcheese/xlcalculator
 
 [Timer]
 OnStartupSec=5min

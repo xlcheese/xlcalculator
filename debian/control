@@ -4,9 +4,9 @@ Priority: optional
 Maintainer: Wesley Hayslip <xl_cheese@hotmail.com>
 Build-Depends: debhelper-compat (= 13), dh-python, gettext, python3
 Standards-Version: 4.6.2
-Homepage: https://github.com/xlcheese/xl-calculator
-Vcs-Git: https://github.com/xlcheese/xl-calculator.git
-Vcs-Browser: https://github.com/xlcheese/xl-calculator
+Homepage: https://github.com/xlcheese/xlcalculator
+Vcs-Git: https://github.com/xlcheese/xlcalculator.git
+Vcs-Browser: https://github.com/xlcheese/xlcalculator
 Rules-Requires-Root: no
 
 Package: xl-calculator

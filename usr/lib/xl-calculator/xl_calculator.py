@@ -20,8 +20,15 @@ if __name__ == "__main__" and sys.argv[1:] == ["--refresh-rates"]:
     sys.exit(refresh_from_command_line())
 
 import gi
+gi.require_version('Gdk', '3.0')
 gi.require_version('Gtk', '3.0')
-from gi.repository import Gtk, Gdk, GLib
+from gi.repository import Gdk
+if "GDK_BACKEND" not in os.environ:
+    # The Buffet menu places its pop-ups itself, which Wayland doesn't let a program do. On a Wayland
+    # desktop, run through XWayland (X11), as Buffet Menu does; on Wayland itself only if there's no
+    # XWayland. GTK starts when Gtk is imported, so this comes first.
+    Gdk.set_allowed_backends("x11,*")
+from gi.repository import Gtk, GLib
 from config import APP_ID
 from window import XCalculator
 
