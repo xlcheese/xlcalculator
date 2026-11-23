@@ -46,6 +46,8 @@ Menu** sets how it lays out its menus, or switches back to a classic menu bar.
 
 ## Install
 
+### Linux Mint, Ubuntu, and Debian
+
 Download the `.deb` from the [latest release](https://github.com/xlcheese/xlcalculator/releases/latest)
 and open it, or install it from a terminal:
 
@@ -58,6 +60,22 @@ xl-Calculator then appears in the menu under **Accessories**.
 Until version 0.10, xl-Calculator was called Xcalculator. Installing xl-Calculator
 replaces it, and the first time it starts it copies over your settings, history,
 and downloaded exchange rates.
+
+### Other distributions (Flatpak)
+
+On Fedora, KDE Plasma, Deepin, and any other distribution with Flatpak, download
+the `.flatpak` from the [latest release](https://github.com/xlcheese/xlcalculator/releases/latest)
+and open it, or install it from a terminal:
+
+```
+flatpak install --user xl-calculator-0.12.flatpak
+```
+
+If the GNOME runtime it needs isn't installed yet, Flatpak offers to download it
+from Flathub. The Flatpak updates only when you install a newer release's file.
+It can't refresh the exchange rates while xl-Calculator is closed, so that
+setting is greyed out in Preferences; **Refresh Rates** and the automatic refresh
+work as usual.
 
 To run it without installing, you need Python 3 and GTK 3 (both come with Linux
 Mint):
